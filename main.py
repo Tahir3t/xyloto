@@ -40,7 +40,7 @@ def human_format(num):
 st.markdown("---")
 if button_clicked:
     get_info = yf.Ticker(ticker)
-    if (get_info.info is not None):
+    if get_info.info is not None:
         if ("totalRevenue" in get_info.info) and (get_info.info['totalRevenue'] is not None):
             col_l, col_m, col_r = st.columns(3)
             with col_l:
